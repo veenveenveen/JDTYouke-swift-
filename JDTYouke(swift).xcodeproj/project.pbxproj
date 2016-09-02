@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E2A46DEDFCC6181926AE5F /* Pods_JDTYouke_swift_.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60B702FD3DCDCDB1E5EFD270 /* Pods_JDTYouke_swift_.framework */; };
 		9029BF8B1D7929E100E0E5C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9029BF8A1D7929E100E0E5C7 /* AppDelegate.swift */; };
 		9029BF8D1D7929E100E0E5C7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9029BF8C1D7929E100E0E5C7 /* ViewController.swift */; };
 		9029BF901D7929E100E0E5C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9029BF8E1D7929E100E0E5C7 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CC108C599D8BA7ED938111F /* Pods-JDTYouke(swift).release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDTYouke(swift).release.xcconfig"; path = "Pods/Target Support Files/Pods-JDTYouke(swift)/Pods-JDTYouke(swift).release.xcconfig"; sourceTree = "<group>"; };
+		4E90B84073471D28727A8222 /* Pods-JDTYouke(swift).debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JDTYouke(swift).debug.xcconfig"; path = "Pods/Target Support Files/Pods-JDTYouke(swift)/Pods-JDTYouke(swift).debug.xcconfig"; sourceTree = "<group>"; };
+		60B702FD3DCDCDB1E5EFD270 /* Pods_JDTYouke_swift_.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JDTYouke_swift_.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9029BF871D7929E100E0E5C7 /* JDTYouke(swift).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JDTYouke(swift).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9029BF8A1D7929E100E0E5C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9029BF8C1D7929E100E0E5C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E2A46DEDFCC6181926AE5F /* Pods_JDTYouke_swift_.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		266E5D0BC1436FBB5A984E31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60B702FD3DCDCDB1E5EFD270 /* Pods_JDTYouke_swift_.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		796F99A504797A18CC35D913 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E90B84073471D28727A8222 /* Pods-JDTYouke(swift).debug.xcconfig */,
+				3CC108C599D8BA7ED938111F /* Pods-JDTYouke(swift).release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9029BF7E1D7929E100E0E5C7 = {
 			isa = PBXGroup;
 			children = (
 				9029BF891D7929E100E0E5C7 /* JDTYouke(swift) */,
 				9029BF881D7929E100E0E5C7 /* Products */,
+				796F99A504797A18CC35D913 /* Pods */,
+				266E5D0BC1436FBB5A984E31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9029BF991D7929E100E0E5C7 /* Build configuration list for PBXNativeTarget "JDTYouke(swift)" */;
 			buildPhases = (
+				EEAB4E52E46989275625231E /* [CP] Check Pods Manifest.lock */,
 				9029BF831D7929E100E0E5C7 /* Sources */,
 				9029BF841D7929E100E0E5C7 /* Frameworks */,
 				9029BF851D7929E100E0E5C7 /* Resources */,
+				FA6D1BA58638D330EDE9EDA6 /* [CP] Embed Pods Frameworks */,
+				CC9D1611A483EAD6FD5CED42 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC9D1611A483EAD6FD5CED42 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDTYouke(swift)/Pods-JDTYouke(swift)-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEAB4E52E46989275625231E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FA6D1BA58638D330EDE9EDA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JDTYouke(swift)/Pods-JDTYouke(swift)-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9029BF831D7929E100E0E5C7 /* Sources */ = {
@@ -247,6 +322,7 @@
 		};
 		9029BF9A1D7929E100E0E5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E90B84073471D28727A8222 /* Pods-JDTYouke(swift).debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "JDTYouke(swift)/Info.plist";
@@ -258,6 +334,7 @@
 		};
 		9029BF9B1D7929E100E0E5C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC108C599D8BA7ED938111F /* Pods-JDTYouke(swift).release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "JDTYouke(swift)/Info.plist";
@@ -286,6 +363,7 @@
 				9029BF9B1D7929E100E0E5C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
